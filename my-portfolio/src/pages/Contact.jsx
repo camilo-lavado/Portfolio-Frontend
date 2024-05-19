@@ -15,20 +15,20 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="section">
-            <h2>Contact Me</h2>
+        <section id="contact" className="contact-section">
+            <h2>Contáctame</h2>
             <div className="p-grid">
                 <div className="p-col-12 p-md-6">
-                    <InputText value={name} onChange={(e) => setName(e.target.value)} placeholder="Your Name" />
+                    <InputText value={name} onChange={(e) => setName(e.target.value)} placeholder="Tu Nombre" />
                 </div>
                 <div className="p-col-12 p-md-6">
-                    <InputText value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Your Email" />
+                    <InputText value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Tu Email" />
                 </div>
                 <div className="p-col-12">
-                    <InputTextarea value={message} onChange={(e) => setMessage(e.target.value)} rows={5} placeholder="Your Message" />
+                    <InputTextarea value={message} onChange={(e) => setMessage(e.target.value)} rows={5} placeholder="Tu Mensaje" />
                 </div>
                 <div className="p-col-12">
-                    <Button label="Send Message" icon="pi pi-send" onClick={handleSubmit} />
+                    <Button label="Enviar Mensaje" icon="pi pi-send" onClick={handleSubmit} />
                 </div>
             </div>
         </section>

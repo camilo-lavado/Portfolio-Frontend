@@ -14,13 +14,13 @@ const Footer = () => {
                             icon="pi pi-github"
                             className="p-button-rounded p-button-secondary p-button-outlined"
                             aria-label="GitHub"
-                            onClick={() => window.open('https://github.com/yourusername', '_blank')}
+                            onClick={() => window.open('https://github.com/camilo-lavado/', '_blank')}
                         />
                         <Button
                             icon="pi pi-linkedin"
                             className="p-button-rounded p-button-secondary p-button-outlined"
                             aria-label="LinkedIn"
-                            onClick={() => window.open('https://linkedin.com/in/yourusername', '_blank')}
+                            onClick={() => window.open('https://www.linkedin.com/in/camilo-lavado/', '_blank')}
                         />
                         <Button
                             icon="pi pi-envelope"

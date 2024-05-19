@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
@@ -11,7 +12,6 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import './App.css';
-import Experience from './pages/Experience';
 
 function App() {
   return (

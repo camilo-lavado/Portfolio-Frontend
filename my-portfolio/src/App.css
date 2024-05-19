@@ -4,16 +4,34 @@
   text-align: center;
 }
 
-.footer {
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   background: #1a1a1a;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid #2a2a2a;
+  color: #ffffff;
 }
 
-.footer-panel {
-  background: #1a1a1a !important;
-  border: none !important;
+.home-content {
+  text-align: center;
+}
+
+.about-section,
+.experience-section,
+.projects-section,
+.contact-section {
+  background: #f4f4f4;
+  color: #000000;
+  padding: 4rem 2rem;
+}
+
+.footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #2a2a2a;
 }
 
 .footer-content {
@@ -28,31 +46,4 @@
 
 .social-links .p-button {
   margin: 0 0.5rem;
-  border: 1px solid #2a2a2a !important;
-  color: #00aaff !important;
-  background: #000000 !important;
-}
-
-.social-links .p-button .pi {
-  color: #00aaff !important;
-}
-
-/* src/App.css */
-.section {
-  padding: 2rem;
-  text-align: center;
-}
-
-.p-card {
-  background: #1a1a1a !important;
-  color: #ffffff !important;
-  border: 1px solid #2a2a2a !important;
-}
-
-.p-card .p-card-title {
-  color: #00aaff !important;
-}
-
-.p-card .p-card-content {
-  color: #ffffff !important;
 }

@@ -16,7 +16,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="section">
+        <section id="experience" className="experience-section">
             <h2>Mi Experiencia</h2>
             <div className="p-grid">
                 {experienceData.map((experience, index) => (

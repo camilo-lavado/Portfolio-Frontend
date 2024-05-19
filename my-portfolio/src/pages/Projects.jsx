@@ -4,14 +4,20 @@ import { Card } from 'primereact/card';
 
 const Projects = () => {
     const projectData = [
-        { title: 'Project 1', description: 'Description of project 1' },
-        { title: 'Project 2', description: 'Description of project 2' },
+        {
+            title: 'Project 1',
+            description: 'Description of project 1'
+        },
+        {
+            title: 'Project 2',
+            description: 'Description of project 2'
+        },
         // Add more projects here
     ];
 
     return (
-        <section id="projects" className="section">
-            <h2>My Projects</h2>
+        <section id="projects" className="projects-section">
+            <h2>Mis Proyectos</h2>
             <div className="p-grid">
                 {projectData.map((project, index) => (
                     <div key={index} className="p-col-12 p-md-4">
