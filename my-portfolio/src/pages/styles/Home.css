@@ -1,14 +1,21 @@
 /* src/pages/styles/Home.css */
 .home-section {
-    position: relative;
-    height: 100vh;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    background: transparent;
+    /* Fondo transparente */
+    color: #00aaff;
+    /* Texto azul */
+    position: relative;
+    overflow: hidden;
+}
+
+.home-content {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .h1home {
@@ -21,100 +28,4 @@
     font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.background-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.background-animation .line {
-    position: absolute;
-    width: 2px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    animation: move 10s linear infinite;
-}
-
-.background-animation .line::before,
-.background-animation .line::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background-color: #00aaff;
-    /* Color azul */
-    border-radius: 50%;
-}
-
-.background-animation .line::before {
-    top: 25%;
-    left: -2px;
-}
-
-.background-animation .line::after {
-    top: 75%;
-    left: -2px;
-    background-color: #ffffff;
-    /* Color blanco */
-}
-
-.background-animation .line:nth-child(1) {
-    left: 10%;
-    animation-duration: 15s;
-    animation-delay: -5s;
-}
-
-.background-animation .line:nth-child(2) {
-    left: 30%;
-    animation-duration: 12s;
-    animation-delay: -3s;
-}
-
-.background-animation .line:nth-child(3) {
-    left: 50%;
-    animation-duration: 10s;
-    animation-delay: -1s;
-}
-
-.background-animation .line:nth-child(4) {
-    left: 70%;
-    animation-duration: 20s;
-    animation-delay: -2s;
-}
-
-.background-animation .line:nth-child(5) {
-    left: 90%;
-    animation-duration: 18s;
-    animation-delay: -4s;
-}
-
-@keyframes move {
-    0% {
-        top: -100%;
-    }
-
-    100% {
-        top: 100%;
-    }
-}
-
-.home-content {
-    position: relative;
-    z-index: 1;
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-p {
-    font-size: 1.5rem;
-    margin: 0.5rem 0 2rem;
 }

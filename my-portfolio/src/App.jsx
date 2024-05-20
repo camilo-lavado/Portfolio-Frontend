@@ -14,6 +14,7 @@ import 'primeflex/primeflex.css';
 import './App.css';
 import BottomNav from './components/BottomNav';
 import useWindowSize from './hooks/useWindowSize';
+import BackgroundAnimation from './components/BackgroundAnimation';
 
 function App() {
   const { width } = useWindowSize();
@@ -21,12 +22,13 @@ function App() {
 
   return (
     <div className="App">
+      <BackgroundAnimation /> {/* Añadir el fondo animado */}
       {isMobile ? <BottomNav /> : <Header />}
-      <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <div id="home" className="section"><Home /></div>
+      <div id="about" className="section"><About /></div>
+      <div id="experience" className="section"><Experience /></div>
+      <div id="projects" className="section"><Projects /></div>
+      <div id="contact" className="section"><Contact /></div>
       <Footer />
     </div>
   );

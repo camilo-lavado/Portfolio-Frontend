@@ -1,4 +1,14 @@
 /* src/App.css */
+.App {
+  position: relative;
+  overflow: hidden;
+}
+
+.App>*:not(.background-animation) {
+  position: relative;
+  z-index: 1;
+}
+
 .section {
   padding: 2rem;
   text-align: center;

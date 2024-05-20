@@ -10,13 +10,6 @@ const Home = () => {
 
     return (
         <section id="home" className="home-section">
-            <div className="background-animation">
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-            </div>
             <div className="home-content">
                 <h1 className='h1home'>Camilo Lavado</h1>
                 <p className='p1home'>Desarrollador Full Stack Web</p>

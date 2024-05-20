@@ -1,0 +1,37 @@
+/* src/pages/styles/Projects.css */
+.projects {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.custom-carousel .p-carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-carousel .p-carousel-prev,
+.custom-carousel .p-carousel-next {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-carousel .p-carousel-prev:hover,
+.custom-carousel .p-carousel-next:hover {
+    background-color: #00aaff;
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .projects {
+        padding: 3rem;
+    }
+}

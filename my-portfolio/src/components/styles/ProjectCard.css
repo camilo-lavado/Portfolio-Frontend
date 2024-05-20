@@ -1,0 +1,32 @@
+/* src/components/styles/ProjectCard.css */
+.project-card {
+    margin: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000000;
+    /* Fondo negro */
+    color: #ffffff;
+    /* Texto blanco */
+}
+
+.project-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-button {
+    background-color: #00aaff;
+    /* Botón azul */
+    border: none;
+    color: #000000;
+    /* Texto negro */
+}
+
+.project-card-button:hover {
+    background-color: #ffffff;
+    /* Fondo blanco al pasar el ratón */
+    color: #00aaff;
+    /* Texto azul al pasar el ratón */
+}
