@@ -1,10 +1,11 @@
 // src/components/MyButton.jsx
 import React from 'react';
 import { Button } from 'primereact/button';
+import './styles/MyButton.css';
 
-function MyButton() {
+function MyButton(props) {
     return (
-        <Button label="Click Me" icon="pi pi-check" />
+        <Button {...props} className="custom-button" />
     );
 }
 

@@ -1,0 +1,67 @@
+/* src/pages/styles/Contact.css */
+.contact-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-section .contact-subtitle {
+    color: #00aaff;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .p-float-label {
+    margin-bottom: 1.8rem;
+    /* Aumenta el margen inferior */
+}
+
+.contact-form .p-float-label label {
+    color: #00aaff;
+}
+
+.contact-form .p-inputtext,
+.contact-form .p-inputtextarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.contact-form .p-inputtext:focus,
+.contact-form .p-inputtextarea:focus {
+    border-color: #00aaff;
+}
+
+.contact-form .p-error {
+    color: #f44336;
+}
+
+.contact-form .p-button-outlined.p-button-secondary {
+    color: #00aaff;
+    border-color: #00aaff;
+}
+
+.contact-form .p-button-outlined.p-button-secondary:hover {
+    background-color: #00aaff;
+    color: #1a1a1a;
+}
+
+.form-message {
+    color: #00aaff;
+    align-self: center;
+    margin-left: 1rem;
+}

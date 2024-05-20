@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
-import { Button } from 'primereact/button';
+import MyButton from '../components/MyButton';
+import './styles/Home.css'; // Asegúrate de importar el archivo de estilos
 
 const Home = () => {
     const scrollToAbout = () => {
@@ -9,10 +10,17 @@ const Home = () => {
 
     return (
         <section id="home" className="home-section">
+            <div className="background-animation">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+            </div>
             <div className="home-content">
                 <h1>Camilo Lavado</h1>
-                <p>Desarrollador Full Stack JavaScript y Java</p>
-                <Button label="Conóceme más" className="p-button-outlined p-button-secondary" onClick={scrollToAbout} />
+                <p>Desarrollador Full Stack Web</p>
+                <MyButton label="Conóceme más" onClick={scrollToAbout} />
             </div>
         </section>
     );

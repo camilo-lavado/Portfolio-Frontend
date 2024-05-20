@@ -1,6 +1,7 @@
 // src/components/Header.jsx
 import React from 'react';
 import { Menubar } from 'primereact/menubar';
+import './styles/Header.css';
 
 const Header = () => {
     const items = [
@@ -10,8 +11,26 @@ const Header = () => {
         { label: 'Contact', icon: 'pi pi-fw pi-envelope', command: () => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }
     ];
 
+    const ptOptions = {
+        root: {
+            className: 'custom-menubar-root'
+        },
+        menu: {
+            className: 'custom-menubar-menu'
+        },
+        menuitem: {
+            className: 'custom-menubar-menuitem'
+        },
+        action: {
+            className: 'custom-menubar-action'
+        },
+        icon: {
+            className: 'custom-menubar-icon'
+        }
+    };
+
     return (
-        <Menubar model={items} />
+        <Menubar model={items} pt={ptOptions} className="custom-menubar" />
     );
 };
 
