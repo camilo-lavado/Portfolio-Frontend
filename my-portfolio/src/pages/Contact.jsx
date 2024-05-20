@@ -5,6 +5,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
 import { classNames } from 'primereact/utils';
+import emailjs from 'emailjs-com';
 import './styles/Contact.css';
 
 const Contact = () => {
@@ -19,11 +20,24 @@ const Contact = () => {
         setSubmitted(true);
 
         if (name && email && message) {
-            toast.current.show({ severity: 'success', summary: 'Éxito', detail: 'Mensaje enviado correctamente', life: 3000 });
-            setName('');
-            setEmail('');
-            setMessage('');
-            setSubmitted(false);
+            const templateParams = {
+                name: name,
+                email: email,
+                message: message,
+            };
+
+            emailjs.send('service_j3sf2yo', 'template_fpgi1gh', templateParams, 'rcttPEzXzhBo1cRLu')
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    toast.current.show({ severity: 'success', summary: 'Éxito', detail: 'Mensaje enviado correctamente', life: 3000 });
+                    setName('');
+                    setEmail('');
+                    setMessage('');
+                    setSubmitted(false);
+                }, (error) => {
+                    console.log('FAILED...', error);
+                    toast.current.show({ severity: 'error', summary: 'Error', detail: 'Error al enviar el mensaje', life: 3000 });
+                });
         } else {
             toast.current.show({ severity: 'error', summary: 'Error', detail: 'Por favor, complete todos los campos', life: 3000 });
         }
@@ -34,18 +48,7 @@ const Contact = () => {
             <Toast ref={toast} />
             <h2>Contáctame</h2>
             <p className="contact-subtitle">¿Tienes alguna pregunta o quieres trabajar juntos?</p>
-            <form
-                onSubmit={handleSubmit}
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                className="contact-form"
-            >
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                    <input name="bot-field" />
-                </div>
+            <form onSubmit={handleSubmit} className="contact-form">
                 <div className="p-fluid">
                     <div className="p-field">
                         <span className="p-float-label">

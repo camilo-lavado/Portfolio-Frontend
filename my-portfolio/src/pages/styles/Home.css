@@ -29,6 +29,29 @@
     animation: move 10s linear infinite;
 }
 
+.background-animation .line::before,
+.background-animation .line::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #00aaff;
+    /* Color azul */
+    border-radius: 50%;
+}
+
+.background-animation .line::before {
+    top: 25%;
+    left: -2px;
+}
+
+.background-animation .line::after {
+    top: 75%;
+    left: -2px;
+    background-color: #ffffff;
+    /* Color blanco */
+}
+
 .background-animation .line:nth-child(1) {
     left: 10%;
     animation-duration: 15s;
