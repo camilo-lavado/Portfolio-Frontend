@@ -4,11 +4,6 @@
   overflow: hidden;
 }
 
-.App>*:not(.background-animation) {
-  position: relative;
-  z-index: 1;
-}
-
 .section {
   padding: 2rem;
   text-align: center;
@@ -19,14 +14,16 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: #000000;
-  /* Fondo negro */
+  background: transparent;
+  /* Fondo transparente */
   color: #00aaff;
   /* Texto azul */
 }
 
 .home-content {
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .about-section,
@@ -34,17 +31,13 @@
 .projects-section,
 .contact-section {
   background: #1a1a1a;
-  /* Fondo negro oscuro */
   color: #ffffff;
-  /* Texto blanco */
   padding: 4rem 2rem;
 }
 
 .footer {
   background: #000000;
-  /* Fondo negro */
   color: #00aaff;
-  /* Texto azul */
   text-align: center;
   padding: 1rem;
   border-top: 1px solid #2a2a2a;
@@ -63,16 +56,12 @@
 .social-links .p-button {
   margin: 0 0.5rem;
   color: #00aaff;
-  /* Texto de botones azul */
   border-color: #00aaff;
-  /* Borde de botones azul */
 }
 
 .social-links .p-button:hover {
   background-color: #00aaff;
-  /* Fondo azul al pasar el ratón */
   color: #000000;
-  /* Texto negro al pasar el ratón */
 }
 
 .contact-section .contact-form {
@@ -80,59 +69,46 @@
   margin: 0 auto;
   padding: 2rem;
   background-color: #2a2a2a;
-  /* Fondo gris oscuro */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form .p-float-label {
   margin-bottom: 1.5rem;
-  /* Aumenta el margen inferior */
 }
 
 .contact-form .p-float-label label {
   color: #00aaff;
-  /* Etiquetas azules */
 }
 
 .contact-form .p-inputtext,
 .contact-form .p-inputtextarea {
   background-color: #333;
-  /* Fondo gris oscuro */
   color: #fff;
-  /* Texto blanco */
   border: 1px solid #444;
-  /* Borde gris */
 }
 
 .contact-form .p-inputtext:focus,
 .contact-form .p-inputtextarea:focus {
   border-color: #00aaff;
-  /* Borde azul al enfocar */
 }
 
 .contact-form .p-error {
   color: #f44336;
-  /* Texto de error rojo */
 }
 
 .contact-form .p-button-outlined.p-button-secondary {
   color: #00aaff;
-  /* Texto de botón azul */
   border-color: #00aaff;
-  /* Borde de botón azul */
 }
 
 .contact-form .p-button-outlined.p-button-secondary:hover {
   background-color: #00aaff;
-  /* Fondo azul al pasar el ratón */
   color: #000000;
-  /* Texto negro al pasar el ratón */
 }
 
 .form-message {
   color: #00aaff;
-  /* Mensaje azul */
   align-self: center;
   margin-left: 1rem;
 }

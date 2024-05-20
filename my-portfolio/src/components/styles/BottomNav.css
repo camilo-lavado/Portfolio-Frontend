@@ -2,15 +2,23 @@
 .bottomnav-custom-menubar {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #000000;
-    border-top: 1px solid #ddd;
+    /* Fondo negro */
+    border-top: 1px solid #2a2a2a;
+    /* Línea superior */
     z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottomnav-custom-menubar-root {
     justify-content: center;
     background-color: #000000 !important;
+    /* Fondo negro */
 }
 
 .bottomnav-custom-menubar-menu {
@@ -18,6 +26,7 @@
     justify-content: space-around;
     width: 100%;
     background-color: #000000;
+    /* Fondo negro */
 }
 
 .bottomnav-custom-menubar-menuitem {
@@ -33,7 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff !important;
+    color: #00aaff !important;
+    /* Texto azul */
     text-decoration: none;
     padding: 1rem;
     border-radius: 8px;
@@ -41,15 +51,18 @@
 
 .bottomnav-custom-menubar-action:hover {
     background-color: #00aaff !important;
+    /* Fondo azul al pasar el ratón */
     color: #000000 !important;
-    border-radius: 8px;
+    /* Texto negro al pasar el ratón */
 }
 
 .bottomnav-custom-menubar-icon {
     color: #00aaff !important;
+    /* Iconos azules */
     font-size: 1.5em;
 }
 
 .bottomnav-custom-menubar-action:hover .bottomnav-custom-menubar-icon {
     color: #000000 !important;
+    /* Iconos negros al pasar el ratón */
 }
