@@ -13,24 +13,24 @@ const Header = () => {
 
     const ptOptions = {
         root: {
-            className: 'custom-menubar-root'
+            className: 'header-custom-menubar-root'
         },
         menu: {
-            className: 'custom-menubar-menu'
+            className: 'header-custom-menubar-menu'
         },
         menuitem: {
-            className: 'custom-menubar-menuitem'
+            className: 'header-custom-menubar-menuitem'
         },
         action: {
-            className: 'custom-menubar-action'
+            className: 'header-custom-menubar-action'
         },
         icon: {
-            className: 'custom-menubar-icon'
+            className: 'header-custom-menubar-icon'
         }
     };
 
     return (
-        <Menubar model={items} pt={ptOptions} className="custom-menubar" />
+        <Menubar model={items} pt={ptOptions} className="header-custom-menubar" />
     );
 };
 

@@ -1,0 +1,55 @@
+/* src/components/styles/BottomNav.css */
+.bottomnav-custom-menubar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.bottomnav-custom-menubar-root {
+    justify-content: center;
+    background-color: #000000 !important;
+}
+
+.bottomnav-custom-menubar-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000000;
+}
+
+.bottomnav-custom-menubar-menuitem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.bottomnav-custom-menubar-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.bottomnav-custom-menubar-action:hover {
+    background-color: #00aaff !important;
+    color: #000000 !important;
+    border-radius: 8px;
+}
+
+.bottomnav-custom-menubar-icon {
+    color: #00aaff !important;
+    font-size: 1.5em;
+}
+
+.bottomnav-custom-menubar-action:hover .bottomnav-custom-menubar-icon {
+    color: #000000 !important;
+}

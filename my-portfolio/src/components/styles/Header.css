@@ -1,56 +1,49 @@
 /* src/components/styles/Header.css */
-.custom-menubar {
+.header-custom-menubar {
     background-color: #000000;
-    /* Fondo negro */
     border: none;
-}
-
-.custom-menubar-root {
-    background-color: #000000 !important;
-    /* Fondo negro */
-}
-
-.custom-menubar-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.custom-menubar-menuitem {
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 8px;
-    /* Bordes redondeados */
 }
 
 .p-menuitem-text {
     color: #ffffff;
 }
 
+.header-custom-menubar-root {
+    background-color: #000000 !important;
+}
 
-.custom-menubar-action {
+.header-custom-menubar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-custom-menubar-menuitem {
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.header-menuitem-text {
+    color: #ffffff;
+}
+
+.header-custom-menubar-action {
     color: #ffffff !important;
-    /* Texto blanco */
     text-decoration: none;
     padding: 1rem;
     border-radius: 8px;
-    /* Bordes redondeados */
 }
 
-.custom-menubar-action:hover {
+.header-custom-menubar-action:hover {
     background-color: #00aaff !important;
-    /* Fondo azul al pasar el ratón */
     color: #000000 !important;
-    /* Texto negro al pasar el ratón */
     border-radius: 8px;
-    /* Bordes redondeados */
 }
 
-.custom-menubar-icon {
+.header-custom-menubar-icon {
     color: #00aaff !important;
-    /* Iconos azules */
 }
 
-.custom-menubar-action:hover .custom-menubar-icon {
+.header-custom-menubar-action:hover .header-custom-menubar-icon {
     color: #000000 !important;
-    /* Iconos negros al pasar el ratón */
 }

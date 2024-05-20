@@ -12,11 +12,16 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import './App.css';
+import BottomNav from './components/BottomNav';
+import useWindowSize from './hooks/useWindowSize';
 
 function App() {
+  const { width } = useWindowSize();
+  const isMobile = width <= 960;
+
   return (
     <div className="App">
-      <Header />
+      {isMobile ? <BottomNav /> : <Header />}
       <Home />
       <About />
       <Experience />
