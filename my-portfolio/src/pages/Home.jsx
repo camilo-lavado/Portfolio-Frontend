@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import MyButton from '../components/MyButton';
-import './styles/Home.css'; // Asegúrate de importar el archivo de estilos
+import './styles/Home.css';
 
 const Home = () => {
     const scrollToAbout = () => {
@@ -18,8 +18,8 @@ const Home = () => {
                 <div className="line"></div>
             </div>
             <div className="home-content">
-                <h1>Camilo Lavado</h1>
-                <p>Desarrollador Full Stack Web</p>
+                <h1 className='h1home'>Camilo Lavado</h1>
+                <p className='p1home'>Desarrollador Full Stack Web</p>
                 <MyButton label="Conóceme más" onClick={scrollToAbout} />
             </div>
         </section>
