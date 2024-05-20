@@ -61,21 +61,18 @@ const Projects = () => {
     }
 
     return (
-        <section id="projects" className="projects-section">
-            <BackgroundAnimation />
-            <div className="projects">
-                <Carousel
-                    value={projects}
-                    itemTemplate={projectTemplate}
-                    numVisible={3}
-                    numScroll={1}
-                    responsiveOptions={responsiveOptions}
-                    className="custom-carousel"
-                    prevIcon="pi pi-chevron-left"
-                    nextIcon="pi pi-chevron-right"
-                />
-            </div>
-        </section>
+        <div className="projects">
+            <Carousel
+                value={projects}
+                itemTemplate={projectTemplate}
+                numVisible={3}
+                numScroll={1}
+                responsiveOptions={responsiveOptions}
+                className="custom-carousel"
+                prevIcon="pi pi-chevron-left"
+                nextIcon="pi pi-chevron-right"
+            />
+        </div>
     );
 }
 
