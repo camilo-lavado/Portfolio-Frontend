@@ -4,10 +4,18 @@
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
-    background-color: #000000;
-    /* Fondo negro */
+    background-color: #1a1a1a;
+    /* Fondo gris oscuro */
     color: #ffffff;
     /* Texto blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .project-card-image {
@@ -20,8 +28,11 @@
     background-color: #00aaff;
     /* Botón azul */
     border: none;
-    color: #000000;
-    /* Texto negro */
+    color: #ffffff;
+    /* Texto blanco */
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .project-card-button:hover {

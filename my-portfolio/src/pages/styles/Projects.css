@@ -30,8 +30,18 @@
     color: #000000;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .projects {
-        padding: 3rem;
+        padding: 1rem;
+    }
+
+    .project-card {
+        margin: 0.5rem;
+    }
+
+    .custom-carousel .p-carousel-prev,
+    .custom-carousel .p-carousel-next {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }

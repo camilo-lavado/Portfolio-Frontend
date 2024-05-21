@@ -4,10 +4,8 @@ import { Carousel } from 'primereact/carousel';
 import ProjectCard from '../components/ProjectCard';
 import './styles/Projects.css';
 
-// Importa las imágenes
 import ADDataImage from '../assets/media/AD-data.png';
 import ADigitalesImage from '../assets/media/Adigitales.png';
-import BackgroundAnimation from '../components/BackgroundAnimation';
 
 const Projects = () => {
     const projects = [
@@ -35,19 +33,18 @@ const Projects = () => {
             link: "https://ad-data.cl/",
             image: ADDataImage
         },
-        // Add more projects as needed
     ];
 
     const responsiveOptions = [
         {
             breakpoint: '1024px',
             numVisible: 3,
-            numScroll: 3
+            numScroll: 1
         },
         {
             breakpoint: '768px',
             numVisible: 2,
-            numScroll: 2
+            numScroll: 1
         },
         {
             breakpoint: '560px',
