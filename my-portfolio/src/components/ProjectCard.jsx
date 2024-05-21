@@ -16,7 +16,7 @@ const ProjectCard = ({ title, description, link, image }) => {
     );
 
     return (
-        <Card title={title} subTitle={description} header={header} footer={footer} className="project-card">
+        <Card title={title} header={header} footer={footer} className="project-card">
         </Card>
     );
 }
