@@ -68,6 +68,7 @@ const Projects = () => {
                 className="custom-carousel"
                 prevIcon="pi pi-chevron-left"
                 nextIcon="pi pi-chevron-right"
+                circular
             />
         </div>
     );

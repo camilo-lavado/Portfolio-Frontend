@@ -8,14 +8,15 @@
     /* Fondo gris oscuro */
     color: #ffffff;
     /* Texto blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra */
+    box-shadow: 0 4px 8px rgba(0, 170, 255, 0.2);
+    /* Sombra azul */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(0, 170, 255, 0.3);
+    /* Sombra azul más intensa */
 }
 
 .project-card-image {
