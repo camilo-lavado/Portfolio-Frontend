@@ -1,0 +1,19 @@
+/* src/pages/styles/About.css */
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #1a1a1a;
+    /* Fondo negro oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.typewriter-text {
+    font-size: 1.2rem;
+    color: #00aaff;
+    /* Color del texto */
+}
