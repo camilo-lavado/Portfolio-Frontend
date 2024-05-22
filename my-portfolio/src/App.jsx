@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
+import Skills from './pages/Skills';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
@@ -22,10 +23,11 @@ function App() {
 
   return (
     <div className="App">
-      <BackgroundAnimation /> {/* Añadir el fondo animado */}
+      <BackgroundAnimation />
       {isMobile ? <BottomNav /> : <Header />}
       <div id="home" className="section"><Home /></div>
       <div id="about" className="section"><About /></div>
+      <div id="skills" className="section"><Skills /></div>
       <div id="experience" className="section"><Experience /></div>
       <div id="projects" className="section"><Projects /></div>
       <div id="contact" className="section"><Contact /></div>

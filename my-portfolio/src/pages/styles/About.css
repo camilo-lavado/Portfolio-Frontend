@@ -1,19 +1,70 @@
 /* src/pages/styles/About.css */
 .about-section {
-    padding: 4rem 2rem;
-    background-color: #1a1a1a;
-    /* Fondo negro oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: transparent;
+    /* Fondo transparente */
     color: #ffffff;
     /* Texto blanco */
     text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
-.about-section h2 {
+.about-card {
+    background: linear-gradient(135deg, #0e0e0e 25%, #252525 50%, #131313 75%);
+    /* Fondo gris oscuro con efecto metalizado */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra inicial */
+    transition: box-shadow 0.3s ease, background-position 0.3s ease;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Borde blanco sutil */
+    background-size: 200% 200%;
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+#about {
+    background: transparent;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 15px;
+    pointer-events: none;
+    transition: background 0.3s ease;
+}
+
+.about-card h2 {
     margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #00aaff;
+    /* Color del encabezado */
 }
 
 .typewriter-text {
     font-size: 1.2rem;
-    color: #00aaff;
+    color: #ffffff;
     /* Color del texto */
+}
+
+#sobremi {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
 }
